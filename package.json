@@ -1,0 +1,15 @@
+{
+  "name": "crud-usuarios-react-angular",
+  "private": true,
+  "description": "Backend Node.js + SQL Server con dos frontends: React y Angular",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix react-frontend install && npm --prefix angular-frontend install && npm install",
+    "dev": "concurrently -k -n api,react,angular -c yellow,cyan,red \"npm --prefix backend start\" \"npm --prefix react-frontend run dev\" \"npm --prefix angular-frontend start -- --port 4200\"",
+    "dev:api": "npm --prefix backend start",
+    "dev:react": "npm --prefix react-frontend run dev",
+    "dev:angular": "npm --prefix angular-frontend start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}

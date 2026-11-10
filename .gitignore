@@ -1,0 +1,13 @@
+# Dependencias (se reinstalan con npm install)
+node_modules/
+
+# Credenciales: NUNCA subir el .env (usa backend/.env.example como plantilla)
+.env
+
+# Compilados y caché
+dist/
+.angular/
+
+# Configuración local del editor / herramientas
+.claude/
+.vscode/
